@@ -1,5 +1,5 @@
 // Configuración de la fecha del evento
-const eventDate = new Date('2025-11-15T21:30:00');
+const eventDate = new Date('2026-11-15T21:30:00');
 
 // Función para actualizar el contador
 function updateCountdown() {

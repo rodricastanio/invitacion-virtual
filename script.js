@@ -86,7 +86,7 @@ document.querySelectorAll('.btn-confirm-yes, .btn-confirm-no').forEach(button =>
 
         // Codificar el mensaje para URL
         const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/5491136659845?text=${encodedMessage}`;
+        const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
 
         // Abrir WhatsApp
         window.open(whatsappUrl, '_blank');
@@ -216,7 +216,7 @@ document.querySelector('.btn-agendar').addEventListener('click', function() {
         description: 'Celebración de los 15 años de Luciana - Una noche mágica, inolvidable y única',
         location: 'Salón La Paloma 3, Av. Vergara 5518, Berazategui',
         startDate: '20251115T213000',
-endDate: '20251116T043000'
+endDate: '20261116T043000'
     };
     
     // Crear URL para Google Calendar

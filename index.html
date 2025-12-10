@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciana - Mis 15 Años</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <!-- Agrega esto en el head -->
+    <audio id="backgroundMusic" loop>
+        <source src="./cancion_beatles.mpeg" type="audio/mpeg">
+        <source src="./cancion_beatles.mpeg" type="audio/ogg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</head>
+
+
+
+
+<body>
+    <!-- Encabezado principal -->
+    <header class="main-header">
+        <div class="floral-decoration">
+            <img src="./flores2.png" alt="flores" id="flores">
+            <img src="./flores.png" alt="flores" id="flores">
+        </div>
+        <div class="header-content">
+            <div class="date-line">
+                <span class="line"></span>
+                <span class="date">15.11.2025</span>
+                <span class="line"></span>
+            </div>
+            <h1 class="name">Luciana</h1>
+            <h2 class="subtitle">Mis 15 años</h2>
+            <div class="invitation-text">
+                <span class="quote">“</span>
+                <br>
+                Te espero para compartir la alegría de esa noche que será para mi mágica, inolvidable y única.
+                <br>
+                <span class="quote">”</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Timer -->
+    <section class="countdown-section">
+        <div class="fondo-timerr">
+            <div class="countdown-bg">
+                <div class="countdown-circle">
+                    <div class="countdown-content">
+                        <h2>Faltan</h2>
+
+                        <div class="countdown-timer">
+                            <div class="time-unit">
+                                <div id="days">00</div>
+                                <span>días</span>
+                            </div>
+
+                            <div class="divider" aria-hidden="true"></div>
+
+                            <div class="time-unit">
+                                <div id="hours">00</div>
+                                <span>hs</span>
+                            </div>
+
+                            <div class="divider" aria-hidden="true"></div>
+
+                            <div class="time-unit">
+                                <div id="minutes">00</div>
+                                <span>min</span>
+                            </div>
+
+                            <div class="divider" aria-hidden="true"></div>
+
+                            <div class="time-unit">
+                                <div id="seconds">00</div>
+                                <span>seg</span>
+                            </div>
+                        </div>
+
+                        <div class="heart" aria-label="corazón">❤</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sección Fiesta -->
+    <section class="party-section">
+        <div class="party-banner">
+            <img src="./banderilla.jpeg" alt="Banderilla Fiesta" id="banner">
+        </div>
+
+        <div class="party-details">
+            <div class="detail-item">
+                <div class="detail-label">Día</div>
+                <div class="detail-value">Sábado 15 de Noviembre - 21.30 hs a 04.30 hs</div>
+                <button class="btn-agendar">AGENDAR</button>
+            </div>
+
+            <div class="detail-item">
+                <div class="detail-label">Lugar</div>
+                <div class="salon-logo-container">
+                    <img src="./laPaloma.png" alt="Logo La Paloma" class="salon-logo">
+                </div>
+                <div class="detail-value">Salón La Paloma 3</div>
+                <button class="btn-confirmar">CONFIRMAR ASISTENCIA</button>
+            </div>
+
+            <div class="detail-item">
+                <div class="detail-label">Dirección</div>
+                <div class="detail-value">Av. Vergara 5518 - Berazategui</div>
+                <button class="btn-llegar">¿CÓMO LLEGAR?</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Dress Code -->
+    <section class="dresscode-section">
+        <div class="card">
+            <h2 class="card-title">Dress Code</h2>
+            <h3 class="card-title">Elegante-Sport</h3>
+            <div class="bow-icon">🎀</div>
+            <p class="card-text">Una orientación para tu vestuario</p>
+            <button class="btn-ver-mas">VER MÁS</button>
+        </div>
+    </section>
+
+    <!-- Sección Regalos -->
+    <section class="gifts-section">
+        <div class="card">
+            <div class="gifts-content">
+                <h3 class="section-title cursive">Regalos</h3>
+                <p class="gifts-text">Lo mas importante es tu presencia , pero si deseas hacerme un regalito y aún no sabes que,  podes hacerlo virtual.</p>
+                <div class="gift-icon">🎁</div>
+                <button class="btn-cbu">Obtener Alias</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón de música flotante -->
+    <div class="music-button">
+        <div class="music-icon">🎵</div>
+    </div>
+
+    <!-- Modal de mapa -->
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>¿Cómo llegar?</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.8535059258943!2d-58.20573228939141!3d-34.80962727276808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32864822880df%3A0xfa7b535d3f86565b!2sAv.%20Valent%C3%ADn%20Vergara%205518%2C%20B1837DCL%20Berazategui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1760231429623!5m2!1ses!2sar"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn-open-maps"
+                        onclick="window.open('https://maps.app.goo.gl/r8qdi5JabosT1syi6', '_blank')">
+                        📱 Abrir en Google Maps
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- Modal de confirmación -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirmar Asistencia</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-content">
+                    <div class="confirmation-icon">💫</div>
+                    <p class="confirmation-question">¿Vas a asistir a mis 15 años?</p>
+                    
+                    <!-- Aviso de fecha límite agregado -->
+                    <div class="deadline-notice">
+                        <span class="deadline-icon">📅</span>
+                        <span class="deadline-text">Confirmar antes del 1° de Noviembre de 2025</span>
+                    </div>
+
+                    <div class="confirmation-options">
+                        <button class="btn-confirm-yes" data-response="si">
+                            <span class="icon">✅</span>
+                            <span>Sí, voy a asistir</span>
+                        </button>
+
+                        <button class="btn-confirm-no" data-response="no">
+                            <span class="icon">❌</span>
+                            <span>No podré asistir</span>
+                        </button>
+                    </div>
+
+                    <div class="confirmation-note">
+                        <small>Al confirmar, se abrirá WhatsApp para enviar tu respuesta automáticamente</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de regalos -->
+    <div id="giftModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Regalos</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="gift-modal-content">
+                    <div class="gift-icon">🎁</div>
+                    <p class="gift-modal-text">¡Gracias por tu regalo!</p>
+
+                    <div class="alias-simple">
+                        <label>Alias de Mercado Pago:</label>
+                        <div class="alias-box">
+                            <span class="alias-text" id="aliasText">luuu.caggii</span>
+                        </div>
+                        <label>Mia Luciana Caggiano</label>
+                        <button class="btn-copy-simple" id="btnCopy">
+                            <span class="copy-icon">📋</span>
+                            Copiar Alias
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de dress code -->
+    <div id="dresscodeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Dress Code</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="dresscode-modal-content">
+                    <div class="color-restriction">
+                        <div class="restriction-icon">🎨</div>
+                        <p class="restriction-text">Por favor, evita usar el color <strong>verde</strong> en tu
+                            vestuario</p>
+                    </div>
+
+                    <div class="dresscode-actions">
+                        <button class="btn-see-examples"
+                            onclick="window.open('https://www.google.com/search?tbm=isch&q=elegante+sport+vestimenta+xv', '_blank')">
+                            <span class="example-icon">👗</span>
+                            Ver Ejemplos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -215,7 +215,7 @@ document.querySelector('.btn-agendar').addEventListener('click', function() {
         title: '15 Años de Luciana',
         description: 'Celebración de los 15 años de Luciana - Una noche mágica, inolvidable y única',
         location: 'Salón La Paloma 3, Av. Vergara 5518, Berazategui',
-        startDate: '20251115T213000',
+        startDate: '20261115T213000',
 endDate: '20261116T043000'
     };
     
